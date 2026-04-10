@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <linearGradient id="flowerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="50%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+  </defs>
+  <!-- Rope -->
+  <path d="M0,10 Q150,60 300,35 Q450,10 600,45 Q750,80 900,35 Q1050,10 1200,20" fill="none" stroke="#4E342E" stroke-width="6"/>
+  <!-- Mango leaves clusters -->
+  <g transform="translate(0,5)">
+    <!-- Repeating leaf + flower pattern along the rope -->
+    <g transform="translate(50,15)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(130,40)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(220,25)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-15)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(5)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(25)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(310,18)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(400,30)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(490,38)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-15)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(5)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(25)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(580,30)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(670,52)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(760,45)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-15)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(5)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(25)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(850,25)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(940,18)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(1030,12)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-15)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(5)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(25)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+    <g transform="translate(1120,12)">
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(-20)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(0)"/>
+      <ellipse rx="8" ry="18" fill="url(#leafGrad)" transform="rotate(20)"/>
+      <circle cy="25" r="8" fill="url(#flowerGrad)"/>
+    </g>
+  </g>
+</svg>

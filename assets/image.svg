@@ -1,0 +1,503 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Background gradient: deep royal hall -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a00;stop-opacity:1"/>
+      <stop offset="30%" style="stop-color:#2e1200;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#5c2800;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8b3a00;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Floor gradient -->
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7a4000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3d1a00;stop-opacity:1"/>
+    </linearGradient>
+    <!-- Gold gradient for pillars -->
+    <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a2000"/>
+      <stop offset="20%" style="stop-color:#c8860a"/>
+      <stop offset="40%" style="stop-color:#f5c842"/>
+      <stop offset="60%" style="stop-color:#e0a020"/>
+      <stop offset="80%" style="stop-color:#c8860a"/>
+      <stop offset="100%" style="stop-color:#4a2000"/>
+    </linearGradient>
+    <!-- Ceiling gradient -->
+    <linearGradient id="ceilGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0500"/>
+      <stop offset="100%" style="stop-color:#1a0a00"/>
+    </linearGradient>
+    <!-- Stage gradient -->
+    <linearGradient id="stageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c87820"/>
+      <stop offset="100%" style="stop-color:#7a4010"/>
+    </linearGradient>
+    <!-- Mandap canopy gradient -->
+    <linearGradient id="canopyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4001a"/>
+      <stop offset="50%" style="stop-color:#b00015"/>
+      <stop offset="100%" style="stop-color:#800010"/>
+    </linearGradient>
+    <!-- Chandelier glow -->
+    <radialGradient id="chandelierGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#ffe8a0;stop-opacity:0.9"/>
+      <stop offset="40%" style="stop-color:#ffb020;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#ff6000;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Center spot light -->
+    <radialGradient id="spotLight" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#fff5d0;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Carpet gradient -->
+    <linearGradient id="carpetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b0000"/>
+      <stop offset="30%" style="stop-color:#c80000"/>
+      <stop offset="50%" style="stop-color:#e00000"/>
+      <stop offset="70%" style="stop-color:#c80000"/>
+      <stop offset="100%" style="stop-color:#6b0000"/>
+    </linearGradient>
+    <!-- Arch gradient -->
+    <linearGradient id="archGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a4000"/>
+      <stop offset="50%" style="stop-color:#f5c842"/>
+      <stop offset="100%" style="stop-color:#7a4000"/>
+    </linearGradient>
+    <!-- Drape gradient -->
+    <linearGradient id="drapeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8001a"/>
+      <stop offset="100%" style="stop-color:#800010"/>
+    </linearGradient>
+    <!-- Wall light glow -->
+    <radialGradient id="wallGlow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffcc44;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="blur6">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="blur12">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+  <!-- ── CEILING ── -->
+  <rect x="0" y="0" width="1920" height="200" fill="url(#ceilGrad)"/>
+
+  <!-- Ceiling ornate border -->
+  <rect x="0" y="195" width="1920" height="12" fill="#c8860a" opacity="0.8"/>
+  <rect x="0" y="200" width="1920" height="4" fill="#f5c842"/>
+  <rect x="0" y="204" width="1920" height="12" fill="#c8860a" opacity="0.6"/>
+
+  <!-- Ceiling medallion pattern -->
+  <g opacity="0.15">
+    <circle cx="960" cy="80" r="120" fill="none" stroke="#f5c842" stroke-width="2"/>
+    <circle cx="960" cy="80" r="90" fill="none" stroke="#f5c842" stroke-width="1.5"/>
+    <circle cx="960" cy="80" r="60" fill="none" stroke="#f5c842" stroke-width="1"/>
+    <line x1="840" y1="80" x2="1080" y2="80" stroke="#f5c842" stroke-width="1"/>
+    <line x1="960" y1="-40" x2="960" y2="200" stroke="#f5c842" stroke-width="1"/>
+    <line x1="875" y1="-5" x2="1045" y2="165" stroke="#f5c842" stroke-width="0.8"/>
+    <line x1="1045" y1="-5" x2="875" y2="165" stroke="#f5c842" stroke-width="0.8"/>
+  </g>
+  <!-- Side ceiling medallions -->
+  <g opacity="0.1">
+    <circle cx="320" cy="80" r="70" fill="none" stroke="#f5c842" stroke-width="1.5"/>
+    <circle cx="320" cy="80" r="45" fill="none" stroke="#f5c842" stroke-width="1"/>
+    <circle cx="1600" cy="80" r="70" fill="none" stroke="#f5c842" stroke-width="1.5"/>
+    <circle cx="1600" cy="80" r="45" fill="none" stroke="#f5c842" stroke-width="1"/>
+  </g>
+
+  <!-- ── PERSPECTIVE FLOOR LINES (vanishing point effect) ── -->
+  <g opacity="0.18" stroke="#c8860a" stroke-width="1">
+    <line x1="960" y1="500" x2="0" y2="1080"/>
+    <line x1="960" y1="500" x2="320" y2="1080"/>
+    <line x1="960" y1="500" x2="640" y2="1080"/>
+    <line x1="960" y1="500" x2="1280" y2="1080"/>
+    <line x1="960" y1="500" x2="1600" y2="1080"/>
+    <line x1="960" y1="500" x2="1920" y2="1080"/>
+    <!-- Horizontal floor lines -->
+    <line x1="0" y1="780" x2="1920" y2="780"/>
+    <line x1="0" y1="900" x2="1920" y2="900"/>
+    <line x1="0" y1="1000" x2="1920" y2="1000"/>
+  </g>
+
+  <!-- ── FLOOR ── -->
+  <rect x="0" y="750" width="1920" height="330" fill="url(#floorGrad)"/>
+  <!-- Floor shine -->
+  <ellipse cx="960" cy="820" rx="600" ry="40" fill="#ffcc44" opacity="0.06" filter="url(#blur12)"/>
+
+  <!-- ── RED CARPET ── -->
+  <polygon points="650,500 1270,500 1380,1080 540,1080" fill="url(#carpetGrad)"/>
+  <!-- Carpet border lines -->
+  <polygon points="660,500 680,500 810,1080 540,1080" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="1260,500 1240,500 1110,1080 1380,1080" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.6"/>
+  <!-- Carpet pattern diamonds -->
+  <g opacity="0.2" fill="#ffd700">
+    <polygon points="960,530 975,560 960,590 945,560"/>
+    <polygon points="960,620 975,650 960,680 945,650"/>
+    <polygon points="960,710 975,740 960,770 945,740"/>
+    <polygon points="960,800 975,830 960,860 945,830"/>
+    <polygon points="960,890 975,920 960,950 945,920"/>
+    <polygon points="960,980 975,1010 960,1040 945,1010"/>
+  </g>
+
+  <!-- ── MAIN ARCH (far end, perspective) ── -->
+  <!-- Arch frame -->
+  <path d="M 600,216 Q 960,80 1320,216 L 1320,750 L 600,750 Z" fill="none" stroke="url(#archGrad)" stroke-width="18"/>
+  <path d="M 610,220 Q 960,95 1310,220 L 1310,745 L 610,745 Z" fill="none" stroke="#c8860a" stroke-width="4"/>
+  <!-- Arch inner glow -->
+  <path d="M 620,225 Q 960,110 1300,225 L 1300,740 L 620,740 Z" fill="#200800" opacity="0.5"/>
+  <!-- Arch ornaments -->
+  <circle cx="960" cy="108" r="22" fill="#f5c842" opacity="0.9"/>
+  <circle cx="960" cy="108" r="14" fill="#c8860a"/>
+  <circle cx="960" cy="108" r="7" fill="#f5c842"/>
+
+  <!-- ── MANDAP STAGE ── -->
+  <rect x="680" y="680" width="600" height="70" fill="url(#stageGrad)"/>
+  <!-- Stage border -->
+  <rect x="680" y="678" width="600" height="6" fill="#f5c842"/>
+  <rect x="680" y="744" width="600" height="4" fill="#c8860a"/>
+  <!-- Stage steps -->
+  <rect x="700" y="750" width="560" height="20" fill="#8b4010" opacity="0.9"/>
+  <rect x="680" y="770" width="600" height="4" fill="#c8860a" opacity="0.7"/>
+
+  <!-- ── MANDAP CANOPY ── -->
+  <!-- Canopy top -->
+  <polygon points="720,350 1200,350 1250,430 1150,390 960,440 770,390 670,430" fill="url(#canopyGrad)"/>
+  <!-- Canopy border -->
+  <polyline points="720,350 1200,350 1250,430" fill="none" stroke="#ffd700" stroke-width="3"/>
+  <polyline points="670,430 720,350" fill="none" stroke="#ffd700" stroke-width="3"/>
+  <!-- Canopy scallop edge -->
+  <g fill="#e8001e" stroke="#ffd700" stroke-width="1">
+    <path d="M670,430 Q700,460 730,430 Q760,460 790,430 Q820,460 850,430 Q880,460 910,430 Q940,460 960,440 Q980,460 1010,430 Q1040,460 1070,430 Q1100,460 1130,430 Q1160,460 1190,430 Q1220,460 1250,430"/>
+  </g>
+
+  <!-- Mandap hanging flowers/strings -->
+  <g stroke="#ff6622" stroke-width="2" opacity="0.8">
+    <path d="M780,430 Q785,510 780,560" fill="none"/>
+    <path d="M860,440 Q865,510 860,555" fill="none"/>
+    <path d="M960,445 Q965,510 960,555" fill="none"/>
+    <path d="M1060,440 Q1065,510 1060,555" fill="none"/>
+    <path d="M1140,430 Q1145,510 1140,560" fill="none"/>
+  </g>
+  <!-- Flower dots on strings -->
+  <g fill="#ff8800">
+    <circle cx="780" cy="475" r="5"/><circle cx="780" cy="510" r="4"/><circle cx="780" cy="542" r="5"/>
+    <circle cx="860" cy="470" r="5"/><circle cx="860" cy="505" r="4"/><circle cx="860" cy="538" r="5"/>
+    <circle cx="960" cy="468" r="5"/><circle cx="960" cy="503" r="4"/><circle cx="960" cy="536" r="5"/>
+    <circle cx="1060" cy="470" r="5"/><circle cx="1060" cy="505" r="4"/><circle cx="1060" cy="538" r="5"/>
+    <circle cx="1140" cy="475" r="5"/><circle cx="1140" cy="510" r="4"/><circle cx="1140" cy="542" r="5"/>
+  </g>
+
+  <!-- ── MANDAP PILLARS (4 inner) ── -->
+  <!-- Left inner pillar -->
+  <rect x="780" y="380" width="28" height="300" fill="url(#pillarGrad)"/>
+  <rect x="770" y="370" width="48" height="16" fill="#f5c842"/>
+  <rect x="770" y="674" width="48" height="16" fill="#f5c842"/>
+  <!-- Right inner pillar -->
+  <rect x="1112" y="380" width="28" height="300" fill="url(#pillarGrad)"/>
+  <rect x="1102" y="370" width="48" height="16" fill="#f5c842"/>
+  <rect x="1102" y="674" width="48" height="16" fill="#f5c842"/>
+
+  <!-- ── SIDE PILLARS (large hall pillars) ── -->
+  <!-- Far left pillar -->
+  <rect x="50" y="216" width="70" height="580" fill="url(#pillarGrad)"/>
+  <rect x="30" y="205" width="110" height="22" fill="#f5c842"/>
+  <rect x="30" y="788" width="110" height="22" fill="#f5c842"/>
+  <rect x="30" y="216" width="110" height="8" fill="#c8860a"/>
+  <!-- Pillar detail rings -->
+  <rect x="35" y="350" width="100" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="35" y="500" width="100" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="35" y="650" width="100" height="6" fill="#f5c842" opacity="0.7"/>
+
+  <!-- Near left pillar -->
+  <rect x="220" y="216" width="80" height="580" fill="url(#pillarGrad)"/>
+  <rect x="198" y="204" width="124" height="24" fill="#f5c842"/>
+  <rect x="198" y="788" width="124" height="24" fill="#f5c842"/>
+  <rect x="202" y="360" width="116" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="202" y="520" width="116" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="202" y="680" width="116" height="6" fill="#f5c842" opacity="0.7"/>
+
+  <!-- Far right pillar -->
+  <rect x="1800" y="216" width="70" height="580" fill="url(#pillarGrad)"/>
+  <rect x="1780" y="205" width="110" height="22" fill="#f5c842"/>
+  <rect x="1780" y="788" width="110" height="22" fill="#f5c842"/>
+  <rect x="1785" y="350" width="100" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="1785" y="500" width="100" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="1785" y="650" width="100" height="6" fill="#f5c842" opacity="0.7"/>
+
+  <!-- Near right pillar -->
+  <rect x="1620" y="216" width="80" height="580" fill="url(#pillarGrad)"/>
+  <rect x="1598" y="204" width="124" height="24" fill="#f5c842"/>
+  <rect x="1598" y="788" width="124" height="24" fill="#f5c842"/>
+  <rect x="1602" y="360" width="116" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="1602" y="520" width="116" height="6" fill="#f5c842" opacity="0.7"/>
+  <rect x="1602" y="680" width="116" height="6" fill="#f5c842" opacity="0.7"/>
+
+  <!-- ── WALL ARCHES between pillars ── -->
+  <!-- Left side arches -->
+  <path d="M 120,216 Q 185,280 250,216" fill="none" stroke="#c8860a" stroke-width="4" opacity="0.7"/>
+  <path d="M 300,216 Q 385,300 470,216" fill="none" stroke="#c8860a" stroke-width="3" opacity="0.5"/>
+  <!-- Right side arches -->
+  <path d="M 1670,216 Q 1735,280 1800,216" fill="none" stroke="#c8860a" stroke-width="4" opacity="0.7"/>
+  <path d="M 1450,216 Q 1535,300 1620,216" fill="none" stroke="#c8860a" stroke-width="3" opacity="0.5"/>
+
+  <!-- ── WALL SCONCES / LIGHTS ── -->
+  <!-- Left sconces -->
+  <g transform="translate(155,360)">
+    <rect x="-8" y="0" width="16" height="30" fill="#c8860a"/>
+    <path d="M-18,0 Q0,-25 18,0 Z" fill="#f5c842"/>
+    <ellipse cx="0" cy="0" rx="14" ry="8" fill="#ffe080" opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="60" ry="40" fill="url(#wallGlow1)" filter="url(#blur6)"/>
+  </g>
+  <g transform="translate(155,580)">
+    <rect x="-8" y="0" width="16" height="30" fill="#c8860a"/>
+    <path d="M-18,0 Q0,-25 18,0 Z" fill="#f5c842"/>
+    <ellipse cx="0" cy="0" rx="14" ry="8" fill="#ffe080" opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="60" ry="40" fill="url(#wallGlow1)" filter="url(#blur6)"/>
+  </g>
+  <!-- Right sconces -->
+  <g transform="translate(1765,360)">
+    <rect x="-8" y="0" width="16" height="30" fill="#c8860a"/>
+    <path d="M-18,0 Q0,-25 18,0 Z" fill="#f5c842"/>
+    <ellipse cx="0" cy="0" rx="14" ry="8" fill="#ffe080" opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="60" ry="40" fill="url(#wallGlow1)" filter="url(#blur6)"/>
+  </g>
+  <g transform="translate(1765,580)">
+    <rect x="-8" y="0" width="16" height="30" fill="#c8860a"/>
+    <path d="M-18,0 Q0,-25 18,0 Z" fill="#f5c842"/>
+    <ellipse cx="0" cy="0" rx="14" ry="8" fill="#ffe080" opacity="0.9"/>
+    <ellipse cx="0" cy="0" rx="8" ry="5" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="60" ry="40" fill="url(#wallGlow1)" filter="url(#blur6)"/>
+  </g>
+
+  <!-- ── MAIN CHANDELIER ── -->
+  <!-- Glow halo -->
+  <ellipse cx="960" cy="200" rx="400" ry="250" fill="url(#chandelierGlow)" filter="url(#blur12)"/>
+  <!-- Chain -->
+  <rect x="957" y="0" width="6" height="80" fill="#8b6020"/>
+  <!-- Main body -->
+  <ellipse cx="960" cy="90" rx="50" ry="18" fill="#c8860a"/>
+  <ellipse cx="960" cy="90" rx="40" ry="12" fill="#f5c842"/>
+  <!-- Arms -->
+  <g stroke="#c8860a" stroke-width="4" fill="none">
+    <line x1="960" y1="95" x2="860" y2="130"/>
+    <line x1="960" y1="95" x2="1060" y2="130"/>
+    <line x1="960" y1="95" x2="820" y2="115"/>
+    <line x1="960" y1="95" x2="1100" y2="115"/>
+    <line x1="960" y1="95" x2="900" y2="140"/>
+    <line x1="960" y1="95" x2="1020" y2="140"/>
+  </g>
+  <!-- Bulbs on arms -->
+  <g fill="#ffe080">
+    <ellipse cx="860" cy="132" rx="10" ry="8"/>
+    <ellipse cx="1060" cy="132" rx="10" ry="8"/>
+    <ellipse cx="820" cy="117" rx="10" ry="8"/>
+    <ellipse cx="1100" cy="117" rx="10" ry="8"/>
+    <ellipse cx="900" cy="142" rx="10" ry="8"/>
+    <ellipse cx="1020" cy="142" rx="10" ry="8"/>
+  </g>
+  <!-- Crystal drops -->
+  <g fill="#ffe8c0" opacity="0.9">
+    <ellipse cx="860" cy="148" rx="4" ry="12"/>
+    <ellipse cx="1060" cy="148" rx="4" ry="12"/>
+    <ellipse cx="820" cy="133" rx="4" ry="10"/>
+    <ellipse cx="1100" cy="133" rx="4" ry="10"/>
+    <ellipse cx="900" cy="158" rx="4" ry="12"/>
+    <ellipse cx="1020" cy="158" rx="4" ry="12"/>
+    <ellipse cx="960" cy="110" rx="5" ry="18"/>
+  </g>
+  <!-- Glitter sparkles on chandelier -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="858" cy="131" r="2"/>
+    <circle cx="1062" cy="131" r="2"/>
+    <circle cx="822" cy="116" r="2"/>
+    <circle cx="1098" cy="116" r="2"/>
+    <circle cx="902" cy="141" r="2"/>
+    <circle cx="1018" cy="141" r="2"/>
+  </g>
+
+  <!-- Small side chandeliers -->
+  <!-- Left -->
+  <g transform="translate(380,120)">
+    <rect x="-3" y="-40" width="6" height="40" fill="#8b6020"/>
+    <ellipse cx="0" cy="0" rx="30" ry="12" fill="#c8860a"/>
+    <ellipse cx="0" cy="0" rx="22" ry="8" fill="#f5c842"/>
+    <line x1="0" y1="5" x2="-40" y2="30" stroke="#c8860a" stroke-width="2.5"/>
+    <line x1="0" y1="5" x2="40" y2="30" stroke="#c8860a" stroke-width="2.5"/>
+    <line x1="0" y1="5" x2="-20" y2="35" stroke="#c8860a" stroke-width="2.5"/>
+    <line x1="0" y1="5" x2="20" y2="35" stroke="#c8860a" stroke-width="2.5"/>
+    <ellipse cx="-40" cy="32" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="40" cy="32" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="-20" cy="37" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="20" cy="37" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="0" cy="120" rx="120" ry="80" fill="url(#chandelierGlow)" opacity="0.5" filter="url(#blur6)"/>
+  </g>
+  <!-- Right -->
+  <g transform="translate(1540,120)">
+    <rect x="-3" y="-40" width="6" height="40" fill="#8b6020"/>
+    <ellipse cx="0" cy="0" rx="30" ry="12" fill="#c8860a"/>
+    <ellipse cx="0" cy="0" rx="22" ry="8" fill="#f5c842"/>
+    <line x1="0" y1="5" x2="-40" y2="30" stroke="#c8860a" stroke-width="2.5"/>
+    <line x1="0" y1="5" x2="40" y2="30" stroke="#c8860a" stroke-width="2.5"/>
+    <line x1="0" y1="5" x2="-20" y2="35" stroke="#c8860a" stroke-width="2.5"/>
+    <line x1="0" y1="5" x2="20" y2="35" stroke="#c8860a" stroke-width="2.5"/>
+    <ellipse cx="-40" cy="32" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="40" cy="32" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="-20" cy="37" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="20" cy="37" rx="7" ry="6" fill="#ffe080"/>
+    <ellipse cx="0" cy="120" rx="120" ry="80" fill="url(#chandelierGlow)" opacity="0.5" filter="url(#blur6)"/>
+  </g>
+
+  <!-- ── MARIGOLD GARLANDS on pillars ── -->
+  <!-- Left pillar garland -->
+  <path d="M 85,250 Q 135,300 85,350 Q 35,400 85,450 Q 135,500 85,550 Q 35,600 85,650" fill="none" stroke="#ff8800" stroke-width="5" opacity="0.9"/>
+  <g fill="#ff6600">
+    <circle cx="85" cy="270" r="7"/><circle cx="105" cy="300" r="6"/><circle cx="85" cy="330" r="7"/>
+    <circle cx="65" cy="370" r="6"/><circle cx="85" cy="410" r="7"/><circle cx="105" cy="450" r="6"/>
+    <circle cx="85" cy="490" r="7"/><circle cx="65" cy="530" r="6"/><circle cx="85" cy="570" r="7"/>
+    <circle cx="85" cy="620" r="7"/>
+  </g>
+  <!-- Right pillar garland -->
+  <path d="M 1835,250 Q 1885,300 1835,350 Q 1785,400 1835,450 Q 1885,500 1835,550 Q 1785,600 1835,650" fill="none" stroke="#ff8800" stroke-width="5" opacity="0.9"/>
+  <g fill="#ff6600">
+    <circle cx="1835" cy="270" r="7"/><circle cx="1855" cy="300" r="6"/><circle cx="1835" cy="330" r="7"/>
+    <circle cx="1815" cy="370" r="6"/><circle cx="1835" cy="410" r="7"/><circle cx="1855" cy="450" r="6"/>
+    <circle cx="1835" cy="490" r="7"/><circle cx="1815" cy="530" r="6"/><circle cx="1835" cy="570" r="7"/>
+    <circle cx="1835" cy="620" r="7"/>
+  </g>
+
+  <!-- ── DRAPED FABRIC on walls (left and right) ── -->
+  <!-- Left fabric drape -->
+  <path d="M 0,216 Q 110,340 0,460 Q 110,580 0,700" fill="none" stroke="#c8001a" stroke-width="20" opacity="0.5"/>
+  <path d="M 0,216 Q 110,340 0,460 Q 110,580 0,700" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.6"/>
+  <!-- Right fabric drape -->
+  <path d="M 1920,216 Q 1810,340 1920,460 Q 1810,580 1920,700" fill="none" stroke="#c8001a" stroke-width="20" opacity="0.5"/>
+  <path d="M 1920,216 Q 1810,340 1920,460 Q 1810,580 1920,700" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.6"/>
+
+  <!-- ── DECORATIVE FLOWER POTS on stage ── -->
+  <!-- Left pot -->
+  <g transform="translate(730,660)">
+    <ellipse cx="0" cy="20" rx="22" ry="8" fill="#8b4010"/>
+    <path d="M-18,20 L-12,-10 L12,-10 L18,20 Z" fill="#a04010"/>
+    <circle cx="0" cy="-18" r="14" fill="#2d8b20"/>
+    <circle cx="-10" cy="-28" r="8" fill="#e8001e"/>
+    <circle cx="10" cy="-28" r="8" fill="#ff6600"/>
+    <circle cx="0" cy="-32" r="8" fill="#ff0066"/>
+  </g>
+  <!-- Right pot -->
+  <g transform="translate(1190,660)">
+    <ellipse cx="0" cy="20" rx="22" ry="8" fill="#8b4010"/>
+    <path d="M-18,20 L-12,-10 L12,-10 L18,20 Z" fill="#a04010"/>
+    <circle cx="0" cy="-18" r="14" fill="#2d8b20"/>
+    <circle cx="-10" cy="-28" r="8" fill="#e8001e"/>
+    <circle cx="10" cy="-28" r="8" fill="#ff6600"/>
+    <circle cx="0" cy="-32" r="8" fill="#ff0066"/>
+  </g>
+
+  <!-- ── STRING LIGHTS along ceiling ── -->
+  <path d="M 0,216 Q 160,240 320,216 Q 480,240 640,216 Q 800,240 960,216 Q 1120,240 1280,216 Q 1440,240 1600,216 Q 1760,240 1920,216" fill="none" stroke="#5a3010" stroke-width="2"/>
+  <!-- Bulbs on string -->
+  <g fill="#ffe840">
+    <ellipse cx="80" cy="236" rx="6" ry="9"/>
+    <ellipse cx="240" cy="230" rx="6" ry="9"/>
+    <ellipse cx="400" cy="236" rx="6" ry="9"/>
+    <ellipse cx="560" cy="230" rx="6" ry="9"/>
+    <ellipse cx="720" cy="236" rx="6" ry="9"/>
+    <ellipse cx="880" cy="230" rx="6" ry="9"/>
+    <ellipse cx="1040" cy="236" rx="6" ry="9"/>
+    <ellipse cx="1200" cy="230" rx="6" ry="9"/>
+    <ellipse cx="1360" cy="236" rx="6" ry="9"/>
+    <ellipse cx="1520" cy="230" rx="6" ry="9"/>
+    <ellipse cx="1680" cy="236" rx="6" ry="9"/>
+    <ellipse cx="1840" cy="230" rx="6" ry="9"/>
+  </g>
+  <!-- Glow from bulbs -->
+  <g opacity="0.3" filter="url(#blur6)">
+    <circle cx="80" cy="236" r="20" fill="#ffee00"/>
+    <circle cx="240" cy="230" r="20" fill="#ffee00"/>
+    <circle cx="400" cy="236" r="20" fill="#ffee00"/>
+    <circle cx="560" cy="230" r="20" fill="#ffee00"/>
+    <circle cx="720" cy="236" r="20" fill="#ffee00"/>
+    <circle cx="880" cy="230" r="20" fill="#ffee00"/>
+    <circle cx="1040" cy="236" r="20" fill="#ffee00"/>
+    <circle cx="1200" cy="230" r="20" fill="#ffee00"/>
+    <circle cx="1360" cy="236" r="20" fill="#ffee00"/>
+    <circle cx="1520" cy="230" r="20" fill="#ffee00"/>
+    <circle cx="1680" cy="236" r="20" fill="#ffee00"/>
+    <circle cx="1840" cy="230" r="20" fill="#ffee00"/>
+  </g>
+
+  <!-- ── SEATED GUESTS (silhouette rows) ── -->
+  <!-- Left audience rows -->
+  <g fill="#1a0800" opacity="0.7">
+    <!-- Row 1 left -->
+    <ellipse cx="370" cy="770" rx="28" ry="14"/>
+    <rect x="342" y="760" width="56" height="30" rx="5"/>
+    <ellipse cx="430" cy="770" rx="28" ry="14"/>
+    <rect x="402" y="760" width="56" height="30" rx="5"/>
+    <ellipse cx="490" cy="770" rx="28" ry="14"/>
+    <rect x="462" y="760" width="56" height="30" rx="5"/>
+    <ellipse cx="550" cy="770" rx="28" ry="14"/>
+    <rect x="522" y="760" width="56" height="30" rx="5"/>
+    <!-- Row 2 left (farther) -->
+    <ellipse cx="380" cy="740" rx="22" ry="11"/>
+    <rect x="358" y="732" width="44" height="22" rx="4"/>
+    <ellipse cx="430" cy="740" rx="22" ry="11"/>
+    <rect x="408" y="732" width="44" height="22" rx="4"/>
+    <ellipse cx="480" cy="740" rx="22" ry="11"/>
+    <rect x="458" y="732" width="44" height="22" rx="4"/>
+    <ellipse cx="530" cy="740" rx="22" ry="11"/>
+    <rect x="508" y="732" width="44" height="22" rx="4"/>
+  </g>
+  <!-- Right audience rows -->
+  <g fill="#1a0800" opacity="0.7">
+    <ellipse cx="1370" cy="770" rx="28" ry="14"/>
+    <rect x="1342" y="760" width="56" height="30" rx="5"/>
+    <ellipse cx="1430" cy="770" rx="28" ry="14"/>
+    <rect x="1402" y="760" width="56" height="30" rx="5"/>
+    <ellipse cx="1490" cy="770" rx="28" ry="14"/>
+    <rect x="1462" y="760" width="56" height="30" rx="5"/>
+    <ellipse cx="1550" cy="770" rx="28" ry="14"/>
+    <rect x="1522" y="760" width="56" height="30" rx="5"/>
+    <ellipse cx="1380" cy="740" rx="22" ry="11"/>
+    <rect x="1358" y="732" width="44" height="22" rx="4"/>
+    <ellipse cx="1430" cy="740" rx="22" ry="11"/>
+    <rect x="1408" y="732" width="44" height="22" rx="4"/>
+    <ellipse cx="1480" cy="740" rx="22" ry="11"/>
+    <rect x="1458" y="732" width="44" height="22" rx="4"/>
+    <ellipse cx="1530" cy="740" rx="22" ry="11"/>
+    <rect x="1508" y="732" width="44" height="22" rx="4"/>
+  </g>
+
+  <!-- ── SPOT LIGHT overlay ── -->
+  <ellipse cx="960" cy="400" rx="700" ry="500" fill="url(#spotLight)"/>
+
+  <!-- ── OVERALL AMBIENT WARM GLOW ── -->
+  <rect width="1920" height="1080" fill="#ff6600" opacity="0.04"/>
+
+  <!-- ── BOTTOM FLOOR REFLECTION ── -->
+  <rect x="0" y="900" width="1920" height="180" fill="#000000" opacity="0.3"/>
+  <ellipse cx="960" cy="920" rx="500" ry="30" fill="#c8860a" opacity="0.12" filter="url(#blur12)"/>
+
+  <!-- ── TOP VIGNETTE ── -->
+  <rect x="0" y="0" width="1920" height="80" fill="#000000" opacity="0.6"/>
+  <!-- ── SIDE VIGNETTES ── -->
+  <rect x="0" y="0" width="120" height="1080" fill="#000000" opacity="0.35"/>
+  <rect x="1800" y="0" width="120" height="1080" fill="#000000" opacity="0.35"/>
+  <!-- ── BOTTOM VIGNETTE ── -->
+  <rect x="0" y="950" width="1920" height="130" fill="#000000" opacity="0.45"/>
+
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="gGlow">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Glow -->
+  <circle cx="60" cy="60" r="55" fill="url(#gGlow)"/>
+  <!-- Halo -->
+  <circle cx="60" cy="55" r="42" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
+  <!-- Body -->
+  <ellipse cx="60" cy="75" rx="22" ry="25" fill="#FFB74D" stroke="#E65100" stroke-width="1.5"/>
+  <!-- Head -->
+  <circle cx="60" cy="42" r="20" fill="#FFB74D" stroke="#E65100" stroke-width="1.5"/>
+  <!-- Crown -->
+  <path d="M42,32 L48,18 L54,28 L60,14 L66,28 L72,18 L78,32" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+  <circle cx="60" cy="22" r="3" fill="#FF1744"/>
+  <circle cx="50" cy="26" r="2" fill="#00E676"/>
+  <circle cx="70" cy="26" r="2" fill="#00E676"/>
+  <!-- Eyes -->
+  <circle cx="52" cy="38" r="3" fill="#333"/>
+  <circle cx="68" cy="38" r="3" fill="#333"/>
+  <circle cx="53" cy="37" r="1" fill="#FFF"/>
+  <circle cx="69" cy="37" r="1" fill="#FFF"/>
+  <!-- Trunk -->
+  <path d="M60,46 Q60,55 52,62 Q48,66 52,68" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round"/>
+  <!-- Ears -->
+  <ellipse cx="38" cy="42" rx="10" ry="14" fill="#FFB74D" stroke="#E65100" stroke-width="1.5"/>
+  <ellipse cx="38" cy="42" rx="6" ry="9" fill="#FFCC80"/>
+  <ellipse cx="82" cy="42" rx="10" ry="14" fill="#FFB74D" stroke="#E65100" stroke-width="1.5"/>
+  <ellipse cx="82" cy="42" rx="6" ry="9" fill="#FFCC80"/>
+  <!-- Belly mark -->
+  <circle cx="60" cy="75" r="8" fill="none" stroke="#E65100" stroke-width="1"/>
+  <!-- Arms -->
+  <path d="M40,65 Q32,58 28,62" stroke="#E65100" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M80,65 Q88,58 92,62" stroke="#E65100" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Items in hands -->
+  <circle cx="26" cy="62" r="4" fill="#FFD700" stroke="#DAA520" stroke-width="1"/><!-- Modak -->
+  <path d="M90,58 L96,52 L92,66 Z" fill="#FFD700" stroke="#DAA520" stroke-width="0.5"/><!-- Trishul -->
+  <!-- Feet -->
+  <ellipse cx="48" cy="98" rx="10" ry="5" fill="#FFB74D" stroke="#E65100" stroke-width="1"/>
+  <ellipse cx="72" cy="98" rx="10" ry="5" fill="#FFB74D" stroke="#E65100" stroke-width="1"/>
+  <!-- Tilak -->
+  <circle cx="60" cy="33" r="2.5" fill="#FF1744"/>
+</svg>
